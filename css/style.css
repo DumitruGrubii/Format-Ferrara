@@ -63,7 +63,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 p { color: #777; }
-p a { color: #ddb900; }
+p a { color: #FF5E47; }
 p a:hover { color: #444; }
 .italic { font-style: italic; }
 
@@ -579,7 +579,7 @@ label {
   position: relative;
   z-index: 1;
   padding-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
   /* White Section */
@@ -1287,6 +1287,7 @@ label {
   z-index: 1;
   border-top: 1px solid #eee;
   background-color: #f4f4f4;
+  padding-bottom: 50px;
 }
   #footer .row { margin: 0 10%; }
 
@@ -1329,6 +1330,6 @@ label {
   #footer.blog {
     text-align: left;
   }
-    #footer.blog p { margin: 0 0 55px 0; }
+    #footer.blog p { margin: 0 0 0 0; }
     #footer.blog .social-media { text-align: left; margin-left: -10px; }
     #footer.blog .row { margin: 0; }
