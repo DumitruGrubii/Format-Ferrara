@@ -136,7 +136,7 @@ p a:hover { color: #444; }
       -webkit-transition: .3s;
       transition: .3s;
     }
-      .panel .panel-heading.active { border-color: #f4d432; background-color: #f2ee94; }
+      .panel .panel-heading.active { border-color: #FF5E47; background-color: #FF8270; }
       .panel .panel-heading.active .panel-title { color: #444; }
 
       .panel .panel-heading i {
