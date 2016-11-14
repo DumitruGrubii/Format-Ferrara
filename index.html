@@ -34,7 +34,6 @@
           <div class="arrow-up"></div>
           <ul class="menu">
             <li><a href="index.html#contact">Scrivici</a></li>
-            <li><a href="team.html">Scopri chi siamo</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="blog.html"><strong>NEWS</strong></a></li>
           </ul>
@@ -210,51 +209,73 @@
         <div class="content">
           <h3>Scrivici</h3>
 
-          <form role="form">
-            <div class="form-group">
-              <input type="text" class="form-control" id="exampleInputName" placeholder="Nome" required>
-              <label for="exampleInputName"><i class="icon-tag"></i></label>
-              <div class="clearfix"></div>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
-              <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
-              <div class="clearfix"></div>
-            </div>
-            <div class="form-group textarea">
-              <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Scrivi il messaggio" required></textarea>
-              <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
-              <div class="clearfix"></div>
-            </div>
+   <form id="contact-form" method="post" action="contact.php" role="form">
 
-            <button type="submit" class="btn btn-large">Invia</button>
-          </form>
+    <div class="messages"></div>
 
-        </div>
-      </div>
-    </div><!-- /.container -->
-
-
-
-    <div id="footer" class="section blog">
-      <div class="container">
+    <div class="controls">
 
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <h3>Info</h3>
-            <p>
-              Per informazioni e costi dei corsi, non esitate a contattarci o venirci a trovare in palestra!
-            </p>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <h3>Contatti</h3>
-            <p>&#128222; &nbsp; 392 229 9568 / 339 867 6149</p>
-            <p>&#128205; &nbsp; via Arturo Cassoli 25, 44121 Ferrara</p>
-          </div>
-          <br/><br/>Made by <a href="https://twitter.com/maskyngames">Maskyn</a>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Nome" required="required" data-error="Firstname is required.">
+                    <label for="name"><i class="icon-tag"></i></label>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                    <label for="email"><i class="icon-inbox"></i></label>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Scrivi il messaggio" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                    <label for="message"><i class="icon-pencil"></i></label>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-large btn-success btn-send" value="Invia" style="margin-top: 50px;">
+            </div>
+        </div>
+        </div>
+    </div>
+</form>
+
+</div>
+</div>
+
+
+<div id="footer" class="section blog">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <h3>Info</h3>
+        <p>
+          Per informazioni e costi dei corsi, non esitate a contattarci o venirci a trovare in palestra!
+          <br /><br />Made by <a href="https://twitter.com/maskyngames">Maskyn</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <h3>Contatti</h3>
+        <p>&#128222; &nbsp; 392 229 9568 / 339 867 6149</p>
+        <p>&#128205; &nbsp; via Arturo Cassoli 25, 44121 Ferrara</p>
       </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
